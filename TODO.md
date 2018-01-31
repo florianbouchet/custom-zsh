@@ -1,0 +1,2 @@
+- [ ] Build .zshrc
+- [ ] Copy .zshrc file/folders to home

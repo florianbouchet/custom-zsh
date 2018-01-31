@@ -5,15 +5,13 @@
 # Mail: contact@florianbouchet.fr
 # What: Install and configure zsh with custom rules and oh-my-zsh
 # Require: git, curl (automatically installed if not yet)
+# Require sudo/root: yes
 #######
 
-##
 # Ensure script is runned with privileges
-##
-
-if [[ $EUID -ne 0 ]]; then
-    echo "Installation will update/upgrade your system and install zsh without any confirmation ask. Type your password to continue."
-    sudo -v
+if [ ! $(id -u) -eq 0 ]; then
+    echo "Please run as root/sudo"
+    exit 1
 fi
 
 # Udate/Upgrade system
