@@ -1,6 +1,16 @@
-Installation:
+# Installation:
 
-Run `sh ./run.sh`
+```bash
+git clone https://github.com/florianbouchet/custom-zsh.git
+sh ./run.sh
+```
 
-CREDITS
-https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH
+After, if it doesn't works, reboot your computer.
+
+# Credits
+
+https://github.com/robbyrussell/oh-my-zsh
+
+# Contributions
+
+Be free to send PR to improve this repository.
